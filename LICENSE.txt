@@ -1,3 +1,4 @@
+The MIT License (MIT)
 Copyright (c) 2011 Charlie Robbins, Marak Squires, and the Contributors.
 
 Some change by Sayed Tauseef Naqvi
