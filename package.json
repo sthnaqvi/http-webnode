@@ -1,19 +1,30 @@
 {
-  "name": "http-server",
-  "version": "0.11.1",
-  "description": "A simple zero-configuration command-line http server",
-  "main": "./lib/http-server",
+  "name": "http-webnode",
+  "version": "1.0.0",
+  "description": "A simple zero-configuration command-line static web server with custom error file, also serve single page application like angular 2/4/5 over http/https.",
+  "main": "./lib/http-webnode",
   "repository": {
     "type": "git",
-    "url": "git://github.com/indexzero/http-server.git"
+    "url": "git://github.com/sthnaqvi/http-webnode.git"
   },
   "keywords": [
     "cli",
-    "command"
+    "command",
+    "static",
+    "web",
+    "server",
+    "files",
+    "serve",
+    "angular 5",
+    "angular 2",
+    "http",
+    "https",
+    "node",
+    "webnode"
   ],
   "scripts": {
-    "start": "node ./bin/http-server",
-    "pretest": "common bin/http-server lib/ test",
+    "start": "node ./bin/http-webnode",
+    "pretest": "common bin/http-webnode lib/ test",
     "test": "vows --spec --isolate"
   },
   "files": [
@@ -63,12 +74,16 @@
     {
       "name": "BigBlueHat",
       "email": "byoung@bigbluehat.com"
+    },
+    {
+      "name": "Sayed Tauseef Naqvi",
+      "email": "tauseef.naqvi786@gmail.com"
     }
   ],
   "dependencies": {
     "colors": "1.0.3",
     "corser": "~2.0.0",
-    "ecstatic": "^3.0.0",
+    "etstatic": "^1.0.3",
     "http-proxy": "^1.8.1",
     "opener": "~1.4.0",
     "optimist": "0.6.x",
@@ -81,12 +96,11 @@
     "vows": "0.7.x"
   },
   "bugs": {
-    "url": "https://github.com/nodeapps/http-server/issues"
+    "url": "https://github.com/sthnaqvi/http-webnode/issues"
   },
   "license": "MIT",
-  "preferGlobal": "true",
   "bin": {
-    "http-server": "./bin/http-server",
-    "hs": "./bin/http-server"
+    "http-webnode": "./bin/http-webnode",
+    "hs": "./bin/http-webnode"
   }
 }

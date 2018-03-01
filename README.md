@@ -1,29 +1,31 @@
-[![build status](https://img.shields.io/travis/indexzero/http-server.svg?style=flat-square)](https://travis-ci.org/indexzero/http-server)
-[![dependencies status](https://img.shields.io/david/indexzero/http-server.svg?style=flat-square)](https://david-dm.org/indexzero/http-server)
-[![npm](https://img.shields.io/npm/v/http-server.svg?style=flat-square)](https://www.npmjs.com/package/http-server)
-[![license](https://img.shields.io/github/license/indexzero/http-server.svg?style=flat-square)](https://github.com/indexzero/http-server)
+[![build status](https://img.shields.io/travis/sthnaqvi/http-webnode.svg?style=flat-square)](https://travis-ci.org/sthnaqvi/http-webnode)
+[![dependencies status](https://img.shields.io/david/sthnaqvi/http-webnode.svg?style=flat-square)](https://david-dm.org/sthnaqvi/http-webnode)
+[![npm](https://img.shields.io/npm/v/http-webnode.svg?style=flat-square)](https://www.npmjs.com/package/http-webnode)
+[![license](https://img.shields.io/github/license/sthnaqvi/http-webnode.svg?style=flat-square)](https://github.com/sthnaqvi/http-webnode)
 
-# http-server: a command-line http server
+# http-webnode: a command-line static web server
 
-`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
+`http-webnode` is a simple, zero-configuration command-line static web server with custom error file, also serve single page application like angular 2/4/5 over http/https.  It is powerful enough for production usage, but it's simple and hackable enough to be used for testing, local development, and learning.
 
-![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)
+![](https://github.com/sthnaqvi/http-webnode/raw/master/screenshots/public.png)
 
 # Installing globally:
 
 Installation via `npm`:
 
-     npm install http-server -g
+     npm install http-webnode -g
 
-This will install `http-server` globally so that it may be run from the command line.
+This will install `http-webnode` globally so that it may be run from the command line.
 
 ## Usage:
 
-     http-server [path] [options]
+     http-webnode [path] [options]
 
 `[path]` defaults to `./public` if the folder exists, and `./` otherwise.
 
 *Now you can visit http://localhost:8080 to view your server*
+
+**Note:** If you serve single page application like Angular 2/4/5. Add `-n index` to serve successfully.
 
 **Note:** Caching is on by default. Add `-c-1` as an option to disable caching.
 
@@ -34,6 +36,8 @@ This will install `http-server` globally so that it may be run from the command 
 `-a` Address to use (defaults to 0.0.0.0)
 
 `-d` Show directory listings (defaults to 'True')
+
+`-n` Error filename without .html (defaults to 404, redirect to 404.html)
 
 `-i` Display autoIndex (defaults to 'True')
 
@@ -69,7 +73,7 @@ Checkout this repository locally, then:
 
 ```sh
 $ npm i
-$ node bin/http-server
+$ node bin/http-webnode
 ```
 
 *Now you can visit http://localhost:8080 to view your server*

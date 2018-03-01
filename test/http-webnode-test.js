@@ -3,12 +3,12 @@ var assert = require('assert'),
     fs = require('fs'),
     vows = require('vows'),
     request = require('request'),
-    httpServer = require('../lib/http-server');
+    httpServer = require('../lib/http-webnode');
 
 var root = path.join(__dirname, 'fixtures', 'root');
 
-vows.describe('http-server').addBatch({
-  'When http-server is listening on 8080': {
+vows.describe('http-webnode').addBatch({
+  'When http-webnode is listening on 8080': {
     topic: function () {
       var server = httpServer.createServer({
         root: root,
@@ -76,7 +76,7 @@ vows.describe('http-server').addBatch({
         assert.equal(res.headers['access-control-allow-credentials'], 'true');
       }
     },
-    'When http-server is proxying from 8081 to 8080': {
+    'When http-webnode is proxying from 8081 to 8080': {
       topic: function () {
         var proxyServer = httpServer.createServer({
           proxy: 'http://127.0.0.1:8080/',
