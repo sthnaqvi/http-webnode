@@ -1,6 +1,6 @@
 {
   "name": "http-webnode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple zero-configuration command-line static web server with custom error file, also serve single page application like angular 2/4/5 over http/https.",
   "main": "./lib/http-webnode",
   "repository": {
